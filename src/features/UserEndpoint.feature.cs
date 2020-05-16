@@ -36,8 +36,8 @@ namespace TestRepoSpecflow.Src.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User endpoint tests", "\tSo that I can consume correct user metadata\r\n\r\n\tAs a consumer\r\n\r\n\tI want to be a" +
-                    "ble to query the User Service for information", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User endpoint tests", "\tSo that I can consume correct user metadata\r\n\tAs a consumer\r\n\tI want to be able " +
+                    "to query the User Service for information", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -83,14 +83,14 @@ namespace TestRepoSpecflow.Src.Features
         public virtual void ConsumerHitsTheGETUserMetadataEndpointAndIsShownTheCorrectMetadata()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Consumer hits the GET user metadata endpoint and is shown the correct metadata", null, ((string[])(null)));
-#line 11
+#line 9
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 13
+#line 11
  testRunner.Given("I am requesting user metadata endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 15
+#line 12
  testRunner.Then("the response should have \"OK\" as status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 17
+#line 13
  testRunner.And("each user must include field \"id\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
