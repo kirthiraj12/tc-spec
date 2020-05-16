@@ -90,8 +90,6 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I am requesting user metadata endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 12
  testRunner.Then("the response should have \"OK\" as status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 13
- testRunner.And("each user must include field \"id\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -10,5 +10,5 @@ Scenario: Consumer hits the GET user metadata endpoint and is shown the correct 
 
 	Given I am requesting user metadata endpoint
 	Then the response should have "OK" as status code
-	And each user must include field "id"
+#	And each user must include field "id"
 
